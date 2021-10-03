@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/chicken">
+        <p>
+            <label for='username'>Enter a Username</label>
+            <input type="text" placeholder="Enter username" id="username" name="q_username">
+        </p>
+        <p>
+            <label for="password">Enter a Password</label>
+            <input type="password" placeholder="Enter password" id="password" name="q_password">
+        </p>
+        <p>
+            <label for="color">Pick a color</label>
+            <input type="color" id="color" name="q_color">
+        </p>
+        <p>
+            <label for="number">Pick a color</label>
+            <input type="number" placeholder="Enter contact no" id="number" name="q_number">
+        </p>
+        <!--Doesn't submit the form because the type is button-->
+        <button type="button">Submit</button>
+        <!--Submits the form because default type is submit-->
+        <button>Submit</button>
+        <!--OR-->
+        <button type="submit">Submit!</button>
+    </form>
+    <h1>Google Search</h1>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google!</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="\birds">
+        <label for="checkbox">Do you agree?</label>
+        <input type="checkbox" id="checkbox" name="agree to" checked>
+        <p>
+            <label>Choose your favorite color</label><br>
+            <label for="red_color">Red</label>
+            <input type="radio" name="fav_color" id="red_color" value="red">
+            <label for="blue_color">Blue</label>
+            <input type="radio" name="fav_color" id="blue_color" value="blue">
+            <label for="green_color">Green</label>
+            <input type="radio" name="fav_color" id="green_color" value="green">
+            <br>
+            <label for="select_city">Select City</label>
+            <select name="city" id="select_city">
+                <option value="" selected>--Please Choose an Option--</option>
+                <option value="paris">Paris</option>
+                <option value="LA">LA</option>
+                <option value="california">California</option>
+                <option value="mumbai">Mumbai</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="volume">Audio Control</label>
+            <input type="range" id="volume" min="0" max="100" value="30" step="10" name="volume_level">
+        </p>
+        <p>
+            <label for="requests">Any requests?</label>
+            <textarea name="requests_area" id="requests" cols="30" rows="2"
+                placeholder="Type your requests here"></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations for passwords/usernames etc</h2>
+    <form action="/dummy">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input type="text" required id="first" name="first_name">
+        </p>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" required id="username" name="username" minlength="5" maxlength='10'>
+
+        </p>
+        <button>Log-In!</button>
+    </form>
+</body>
+
+</html>
