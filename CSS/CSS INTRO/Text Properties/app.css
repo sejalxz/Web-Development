@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    /* font-weight: 200; */
+    text-decoration: navy wavy underline;
+    letter-spacing: 17px;
+    font-size: 80px;
+    font-family: papyrus;
+}
+
+p {
+    text-align: right;
+    font-weight: lighter;
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+}
