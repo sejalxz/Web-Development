@@ -1,0 +1,105 @@
+/* Universal Selector * */
+/* *{
+    background-color: #f1faee;
+} */
+
+button {
+    color: #1d3557;
+    font-size: 30px;
+    background-color: paleturquoise;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
+
+/* ID Selector # */
+#signup {
+    background-color: #1d3557;
+    color: paleturquoise;
+}
+
+span {
+    color: #48cae4;
+}
+
+/* CLASS Selector */
+.tag{
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 15px;
+}
+
+/* DESCENDANT Selector */
+
+.post a {
+        color: #48cae4;
+        font-weight: 700;
+        text-decoration: none;
+}
+
+footer a {
+    color:#e63946;
+}
+
+/* ADJACENT SELECTOR +  */
+
+h2 + button {
+    font-size: 20px;
+    background-color: palevioletred;
+}
+
+/* DIRECT CHILD or DIRECT DESCENDANT Selector */
+
+footer > a {
+    color:rebeccapurple;
+}
+
+/* ATTRIBUTE Selector */
+
+input[type="password"] {
+    color: #bb3e03;
+}
+
+a[href*="google"] {
+    color: seagreen;
+}
+
+/* PSUEDO SELECTORS */
+
+.post button:hover {
+    background-color: #ffd7ba;
+    color: sienna;
+}
+
+.post a:hover{ 
+text-decoration: underline;
+}
+
+.post button:active{
+    background-color: #219ebc;
+    color: thistle;
+}
+
+.post:nth-of-type(3n){
+    background-color: #c0d6b8;
+}
+
+/* PSUEDO ELEMENTS */
+
+h2::first-letter{
+    font-size: 45px;
+    color: teal;
+}
+
+p::first-line{
+    color: purple;
+}
+
+p::selection{
+    background-color: #ffb4a2;
+}
+
+/* button {
+    background-color: salmon !important;
+} */
