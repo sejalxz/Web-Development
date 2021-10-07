@@ -1,0 +1,42 @@
+/* h1{
+    background-color: paleturquoise;
+    border: 1px solid rgb(19, 4, 105);
+    display: inline;
+}
+
+span{
+    background-color: rgb(230, 157, 240);
+    border: 1px solid purple;
+    display: block;
+} */
+
+span{
+    background-color: rgb(230, 157, 240);
+    border: 1px solid purple;
+    /* width: 500px; Inline ignores height & width */
+    padding: 20px;
+    /* Margin only on horizontally for inline elements */
+    margin: 20px;
+}
+
+h1{
+    background-color: paleturquoise;
+    border: 1px solid rgb(19, 4, 105);
+    width: 300px;
+    /* height: 200px; */
+    text-align: center;
+    padding: 50px;
+    margin: 100px;
+}
+
+div {
+    background-color: palegoldenrod;
+    border: 3px solid burlywood;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 0px 5px;
+
+    /* To hide element set display: none;
+    display: none; */
+}
