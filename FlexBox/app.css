@@ -10,5 +10,19 @@ h1 {
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    /* Flexbox properties are on */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* align-content: flex-start; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
 }
 
+#container div {
+    width: 200px;
+    height: 200px;
+    /* text-align: center;
+    font-size: 4em; */
+}
