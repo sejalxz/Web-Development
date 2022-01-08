@@ -42,5 +42,11 @@ Color.prototype.rgb = function(){
 		return `rgb(${r}, ${g}, ${b})`;
 }
 
+Color.prototype.rgba = function(a = 1.0){
+	const { r, g, b } = this;
+		return `rgb(${r}, ${g}, ${b}, ${a})`;
+}
+
+
 const color1 = new Color(25,255,50);
-document.body.style.backgroundColor = color1.rgb();
+document.body.style.backgroundColor = color1.rgba(0.8);
